@@ -1,3 +1,3 @@
 export function ChatContactList() {
-    return <div>ChatContactList</div>
+  return <div>ChatContactList</div>;
 }

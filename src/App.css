@@ -15,6 +15,9 @@ html,body,#root {
   height: 100vh;
 
 }
+body {
+  position: relative;
+}
 
 .chat-layout {
   padding: var(--space-md);
@@ -47,4 +50,45 @@ html,body,#root {
   border: var(--border-md);
   padding: var(--space-md);
   flex-grow: 1;
+}
+/* button toggle */
+
+.chat-controls {
+  display: flex;
+  gap: var(--space-md);
+}
+.chat-controls-btn {
+  background-color: transparent;
+  border: 2px solid blue;
+  padding: var(--space-sm);
+  cursor: pointer;
+  
+}
+.chat-controls-btn.is-active {
+  background-color: blue;
+  color: white;
+}
+
+/* CHAT MODAL START */
+
+.chat-modal {
+  border: var(--border-md);
+  padding: var(--space-md);
+  background-color: white;
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 500px;
+  width: 100%;
+}
+.chat-modal-close-btn {
+  background-color: transparent;
+  padding: 5px;
+  border: red solid 2px; cursor: pointer;
+
+}
+.chat-modal-close-btn:hover {
+  background-color: red;
+  color: white;
 }
