@@ -5,10 +5,6 @@ import { ChatLayout } from './components/chat-layout'
 import { ChatMessage } from './components/chat-message'
 import { ChatStartDiscussionModal } from './components/chat-start-discussion-modal'
 
-
-function Button(props) {
-}
-
 function App() {
 
 return <>
